@@ -1,0 +1,11 @@
+Each folder contains the example input and output data:
+- 'Datos' folder contains the example initial data (the template).
+- 'Clasificación' contains the exemplification of the converted data through the script.
+- 'Template.xlsx' shows different sheets:
+-- It is recommended not to change the name of the sheets. It is also not recommended to change the sheet column header names unless it is specified they are modifiable.
+---Metadata: Needs 'Sample' and 'Label' headers, and at least 3 samples for each group (except quality control groups QC or blanks BLANK).
+---Datos Crudos: Needs 'Compound Name', 'Formula', 'Mass', 'RT' headers. The features are as rows, samples in the rest of the columns.
+---Concentraciones añadidas: Needs 'ISDs', '[] µg/mL' and '[]muestra µg/mL' headers, with the internal standard compounds as rows.
+---Patrones obtenidos: Needs 'ISDs', 'RT', 'Standard desv' and 'RSD' as headers, with the identified internal standard compounds as rows.
+---Concentraciones patrones: Identified internal standard compound concentrations (as data control), with the same data as 'Concentraciones añadidas' but only with the identified compounds.
+---Áreas a normalizar: Internal Standard Compound Intensity per sample. Needs 'Muesrea' column, with the samples as rows. Remaining columns show each internal standard compound intensity for each sample, with the name'Area *InternalStandardCode*', with InternalStandarCode being the lipid class code given by "LipidClasses.xlsx"
